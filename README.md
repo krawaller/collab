@@ -13,7 +13,7 @@ Webpackbin [here](http://www.webpackbin.com/Ey70dIVI-)
 
 Code for Confirm component:
 
-```
+```typescript
 let Confirm = React.createClass({
   getInitialState: ()=> ({status:'waiting'}),
   maybe() { this.setState({status:'confirm'}) },
