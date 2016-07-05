@@ -104,6 +104,8 @@ class Submission {
 
 ### CycleJS implementation
 
+Webpackbin [here](http://www.webpackbin.com/NJD02H4L-)
+
 Code for Confirm component: 
 
 ```typescript
@@ -185,6 +187,8 @@ const Submission = withComponent(SubmissionMain,Confirm,'disabled$')
 Using the helper introduced in [this post](http://blog.krawaller.se/posts/exploring-composition-in-cyclejs/).
 
 ### Choo implementation
+
+Webpackbin [here](http://www.webpackbin.com/4y4Mt94UZ)
 
 The Confirm component:
 
