@@ -32,7 +32,7 @@ let Confirm = React.createClass({
 
 Code for Submission component:
 
-```
+```typescript
 let Submission = React.createClass({
   getInitialState: ()=> ({submission:'',field:''}),
   onConfirm() { this.setState({submission:this.state.field,field:''}) },
@@ -56,7 +56,7 @@ yada blah, Webpackbin [here](http://www.webpackbin.com/VkPFPSXL-)
 
 Code for Confirm component:
 
-```
+```typescript
 @Component({
   selector: 'confirm',
   template: `
@@ -83,7 +83,7 @@ export class Confirm {
 
 Code for submission component:
 
-```
+```typescript
 @Component({
   selector: 'submission',
   template: `
@@ -106,7 +106,7 @@ class Submission {
 
 Code for Confirm component: 
 
-```
+```typescript
 const intent = sources=> xs.merge(
   sources.disabled$.map(i=> i ? 'DISABLE' : 'ENABLE'),
   sources.DOM.select('.maybe').events('click').map(i=>'MAYBE'),
@@ -141,7 +141,7 @@ const Confirm = sources=> {
 
 Code for Submission component:
 
-```
+```typescript
 const intent = (DOM,childSubmit$)=> {
   const input$ = DOM.select('.field').events('input')
   const newValue$ = input$
@@ -188,7 +188,7 @@ Using the helper introduced in [this post](http://blog.krawaller.se/posts/explor
 
 The Confirm component:
 
-```
+```typescript
 const Confirm = (app,confirmevent)=> {
   app.model({
     namespace: 'confButt',
@@ -219,7 +219,7 @@ const Confirm = (app,confirmevent)=> {
 
 The Submission component:
 
-```
+```typescript
 const Submission = app => {
   const confirm = Confirm(app,'sub:submit')
   app.model({
